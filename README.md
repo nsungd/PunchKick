@@ -39,12 +39,6 @@ Blocking - Holding back depending which direction your facing. Can be done while
 - Other attacks
 - Opponent movement/attacking logic
 
-## Milestone 03 Requirements
-- States/Parallax Backgrounds: Drawn backgrounds, UI layer and stage layer move at different speeds when moving
-- Sprites: Player, opponent, and their respective portraits at the top corners
-- Sounds: Song and hit effect
-- Asset Modification: Palette change during hit and tilemap changes using the healthbar
-
 ## Art Credits
 - Moon and Sea Pixel Art Background by CraftPix.net
 - Game Boy Advance - GBA by Ossi101
