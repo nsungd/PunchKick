@@ -1,13 +1,13 @@
-# Milestone 2
-
+# Punch + Kick (wip)
+### Download my_project.gba to run (needs mGBA emulator)
 ## State Machine
-Title Screen - START to go to Instructions
-Instructions - SELECT to go back to Title, START to continue game
-Stage 1 - START to pause, beat Dummy to advance
-Stage 2 - START to pause, beat Dummy to advance
-Stage 3 - START to pause, beat Dummy to win
-Pause - START to go back to game, SELECT to go back to Title
-Win - START to go back to Title
+- Title Screen - START to go to Instructions
+- Instructions - SELECT to go back to Title, START to continue game
+- Stage 1 - START to pause, beat Dummy to advance
+- Stage 2 - START to pause, beat Dummy to advance
+- Stage 3 - START to pause, beat Dummy to win
+- Pause - START to go back to game, SELECT to go back to Title
+- Win - START to go back to Title
 
 ## Controls
 Left - Move left
@@ -46,14 +46,14 @@ Blocking - Holding back depending which direction your facing. Can be done while
 - Asset Modification: Palette change during hit and tilemap changes using the healthbar
 
 ## Art Credits
-Moon and Sea Pixel Art Background by CraftPix.net
-Game Boy Advance - GBA by Ossi101
-City Pixel Art by DanTheAssassin
-Subway Train by DanielDevs
-Japanese Landscape by jkuntitled
-Volcano Scene by Joshua Groves
-Golden Hour: Pixel Art Sunset over the Ocean by mannerly-river
+- Moon and Sea Pixel Art Background by CraftPix.net
+- Game Boy Advance - GBA by Ossi101
+- City Pixel Art by DanTheAssassin
+- Subway Train by DanielDevs
+- Japanese Landscape by jkuntitled
+- Volcano Scene by Joshua Groves
+- Golden Hour: Pixel Art Sunset over the Ocean by mannerly-river
 
 ## Music Credits
-Lightning Pandemonium from Rivals of Aether 2 by flashygoodness
-hit.wav from SE_00069.wav from Street Fighter III: 3rd Strike via The Sound Resource
+- Lightning Pandemonium from Rivals of Aether 2 by flashygoodness
+- hit.wav from SE_00069.wav from Street Fighter III: 3rd Strike via The Sound Resource
