@@ -1,0 +1,163 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "stage2FullBackground.tmx",
+    "expandedProjectPaths": [
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "css.tmx": {
+            "scale": 2.23,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 115.91928251121077,
+                "y": 116.14349775784756
+            }
+        },
+        "gameTiles.tsx": {
+            "scaleInDock": 2.0297,
+            "scaleInEditor": 1.68
+        },
+        "lose.tmx": {
+            "scale": 2.23,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 128.02690582959642,
+                "y": 127.80269058295964
+            }
+        },
+        "pause.tmx": {
+            "scale": 2.9436,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 127.90460660415818,
+                "y": 128.07446663948906
+            }
+        },
+        "stage1.tmx": {
+            "scale": 2.27,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 250.44052863436124,
+                "y": 56.82819383259911
+            }
+        },
+        "stage1Tiles.tsx": {
+            "scaleInDock": 1.0293,
+            "scaleInEditor": 1.68
+        },
+        "stage2.tmx": {
+            "scale": 1.95,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 207.43589743589746,
+                "y": 109.23076923076925
+            }
+        },
+        "stage2BackgroundBG.tsx": {
+            "scaleInDock": 1.2451,
+            "scaleInEditor": 1.68
+        },
+        "stage2FullBackground.tmx": {
+            "scale": 1.69,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 293.7869822485207,
+                "y": 125.4437869822485
+            }
+        },
+        "stage2Train.tsx": {
+            "scaleInDock": 1.2141,
+            "scaleInEditor": 1.68
+        },
+        "stage2TrainBG.tmx": {
+            "scale": 2.21,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 258.1447963800905,
+                "y": 83.71040723981899
+            }
+        },
+        "stage3.tmx": {
+            "scale": 2.52,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 160.515873015873,
+                "y": 123.01587301587301
+            }
+        },
+        "stage3Tiles.tsx": {
+            "scaleInDock": 2.2881,
+            "scaleInEditor": 1.68
+        },
+        "start.tmx": {
+            "scale": 2.2378,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 143.2210206452766,
+                "y": 98.31084100455806
+            }
+        },
+        "ui.tmx": {
+            "scale": 1.93,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 128.23834196891195,
+                "y": 127.97927461139896
+            }
+        },
+        "win.tmx": {
+            "scale": 2.23,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 128.02690582959642,
+                "y": 127.80269058295963
+            }
+        }
+    },
+    "last.exportedFilePath": "/Users/noahsung/CS 2261/final project",
+    "last.externalTilesetPath": "/Users/noahsung/CS 2261/final project/assets",
+    "last.imagePath": "/Users/noahsung/CS 2261/final project/assets",
+    "map.height": 32,
+    "map.lastUsedExportFilter": "GBA source files - regular (*.c)",
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 8,
+    "map.tileWidth": 8,
+    "map.width": 32,
+    "openFiles": [
+        "gameTiles.tsx",
+        "win.tmx",
+        "pause.tmx",
+        "ui.tmx",
+        "stage1Tiles.tsx",
+        "stage2Train.tsx",
+        "stage2BackgroundBG.tsx",
+        "stage3Tiles.tsx",
+        "stage3.tmx",
+        "stage2TrainBG.tmx",
+        "stage2FullBackground.tmx"
+    ],
+    "project": "untitled.tiled-project",
+    "recentFiles": [
+        "gameTiles.tsx",
+        "win.tmx",
+        "pause.tmx",
+        "ui.tmx",
+        "stage1Tiles.tsx",
+        "stage2Train.tsx",
+        "stage2BackgroundBG.tsx",
+        "stage3Tiles.tsx",
+        "stage3.tmx",
+        "stage2TrainBG.tmx",
+        "stage2FullBackground.tmx",
+        "css.tmx"
+    ],
+    "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)",
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 8,
+        "width": 8
+    }
+}
