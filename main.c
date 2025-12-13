@@ -2,6 +2,7 @@
 #include "mode0.h"
 #include "mode4.h"
 #include "print.h"
+#include "stdio.h"
 #include "analogSound.h"
 #include "digitalSound.h"
 
@@ -13,6 +14,10 @@
 #include "start2.h"
 #include "css.h"
 #include "instructions.h"
+#include "instructions2.h"
+#include "instructions3.h"
+#include "instructions4.h"
+#include "instructions5.h"
 
 #include "stage1.h"
 #include "stage1Tiles.h"
@@ -32,6 +37,8 @@
 
 #include "sprites.h"
 #include "spritesheet.h"
+#include "changmoSheet.h"
+#include "dummySheet.h"
 
 #include "game.h"
 #include "attacks.h"
@@ -77,6 +84,9 @@ u16 oldButtons;
 int startFrames;
 int prevState;
 int bgScroll;
+int playerWins;
+int oppWins;
+int instructPage;
 OBJ_ATTR shadowOAM[128];
 
 int main() {
@@ -133,7 +143,7 @@ void initialize() {
     initSound();
     setupSounds();
     setupSoundInterrupts();
-    //playSoundA(LightningPandemonium_data, LightningPandemonium_length - 1, 1);
+    playSoundA(LightningPandemonium_data, LightningPandemonium_length - 100, 1);
 
     
     hideSprites();
@@ -163,7 +173,6 @@ void start() {
         drawFullscreenImage4(startBitmap);
     }
     if (BUTTON_PRESSED(BUTTON_START)) {
-        // goToCSS();
         goToInstructions();
     }
     if BUTTON_PRESSED(BUTTON_SELECT) {
@@ -193,31 +202,70 @@ void goToInstructions() {
     DMANow(3, instructionsPal, BG_PALETTE, instructionsPalLen / 3);
     drawFullscreenImage4(instructionsBitmap);
     state = INSTRUCTIONS;
+    instructPage = 1;
 }
 
 void instructions() {
     if BUTTON_PRESSED(BUTTON_START) {
-        // goToCSS();
         initGame();
         goToStage1();
     }
     if BUTTON_PRESSED(BUTTON_SELECT) {
         goToStart();
     }
+    if (BUTTON_PRESSED(BUTTON_LEFT)) {
+        if (instructPage == 5) {
+            drawFullscreenImage4(instructions4Bitmap);
+            instructPage = 4;
+        } else if (instructPage == 4) {
+            drawFullscreenImage4(instructions3Bitmap);
+            instructPage = 3;
+        } else if (instructPage == 3) {
+            drawFullscreenImage4(instructions2Bitmap);
+            instructPage = 2;
+        } else if (instructPage == 2) {
+            drawFullscreenImage4(instructionsBitmap);
+            instructPage = 1;
+        }
+    }
+
+    if (BUTTON_PRESSED(BUTTON_RIGHT)) {
+        if (instructPage == 1) {
+            drawFullscreenImage4(instructions2Bitmap);
+            instructPage = 2;
+        } else if (instructPage == 2) {
+            drawFullscreenImage4(instructions3Bitmap);
+            instructPage = 3;
+        } else if (instructPage == 3) {
+            drawFullscreenImage4(instructions4Bitmap);
+            instructPage = 4;
+        } else if (instructPage == 4) {
+            drawFullscreenImage4(instructions5Bitmap);
+            instructPage = 5;
+        }
+    }
 }
 
 void goToStage1() {
     switchMode0();
     // Wide background, will implement scrolling
+    opp.character = GINGER;
     DMANow(3, gameTilesTiles, &CHARBLOCK[0], gameTilesTilesLen / 2);
     DMANow(3, stage1TilesTiles, &CHARBLOCK[1], stage1TilesTilesLen / 2);
     DMANow(3, stage1TilesPal, BG_PALETTE, stage1TilesPalLen / 2);
+    DMANow(3, gameTilesPal, &BG_PALETTE[32], 16);
     DMANow(3, stage1Map, &SCREENBLOCK[30], stage1MapLen / 2);
-    DMANow(3, uiMap, &SCREENBLOCK[29], uiMapLen / 2);
+    DMANow(3, uiMap, &SCREENBLOCK[28], uiMapLen / 2);
     REG_BG3CNT = BG_CHARBLOCK(1) | BG_SCREENBLOCK(30) | BG_SIZE_WIDE;
-    REG_BG0CNT = BG_CHARBLOCK(0) | BG_SCREENBLOCK(29);
+    REG_BG0CNT = BG_CHARBLOCK(0) | BG_SCREENBLOCK(28);
     REG_DISPCTL = MODE(0) | BG_ENABLE(0) |BG_ENABLE(3) | SPRITE_ENABLE;
     state = STAGE1;
+
+    for (int i = 0; i < uiMapLen; i++) {
+        SCREENBLOCK[28].tilemap[i] |= TILEMAP_ENTRY_PALROW(2);
+    }
+
+    changeCharacters();
 }
 
 void stage1() {
@@ -227,6 +275,7 @@ void stage1() {
     updatePlayer();
     updateOpp();
     updateCamera();
+    updateSupers();
     calculateAttackHitboxes();
     drawPlayer();
     drawOpp();
@@ -238,17 +287,39 @@ void stage1() {
         goToPause();
     }
     if (opp.health <= 0) {
-        prevState = STAGE1;
-        goToStage2();
+        playerWins++;
+        updateWins();
+        initGame();
+        if (playerWins >= 2) {
+            playerWins = 0;
+            oppWins = 0;
+            player.meter = 0;
+            opp.meter = 0;
+            clearWins();
+            prevState = STAGE1;
+            goToStage2();
+        }
     }
     if (player.health <= 0) {
-        goToLose();
+        oppWins++;
+        updateWins();
+        initGame();
+        if (oppWins >= 2) {
+            playerWins = 0;
+            oppWins = 0;
+            player.meter = 0;
+            opp.meter = 0;
+            clearWins();
+            goToLose();
+        }
     }
 }
 
 void goToStage2() {
+    opp.character = NEON;
     DMANow(3, stage2SkyBGPal, BG_PALETTE, stage2SkyBGPalLen / 2);
     DMANow(3, trainPal, &BG_PALETTE[16] , 16);
+    DMANow(3, gameTilesPal, &BG_PALETTE[32], 16);
     DMANow(3, stage2SkyBGTiles, &CHARBLOCK[1], stage2SkyBGTilesLen / 2);
     DMANow(3, stage2FullBackgroundMap, &SCREENBLOCK[30], stage2FullBackgroundMapLen / 2);
     DMANow(3, trainTiles, &CHARBLOCK[2], trainTilesLen / 2);
@@ -267,6 +338,7 @@ void goToStage2() {
         initGame();
     }
     state = STAGE2;
+    changeCharacters();
 }
 
 void stage2() {
@@ -276,6 +348,7 @@ void stage2() {
     updatePlayer();
     updateOpp();
     updateCamera();
+    updateSupers();
     calculateAttackHitboxes();
     drawPlayer();
     drawOpp();
@@ -287,21 +360,46 @@ void stage2() {
         goToPause();
     }
     if (opp.health <= 0) {
-        prevState = STAGE2;
-        REG_DISPCTL |= !BG_ENABLE(2);
-        goToStage3();
+        playerWins++;
+        updateWins();
+        initGame();
+        if (playerWins >= 2) {
+            playerWins = 0;
+            oppWins = 0;
+            player.meter = 0;
+            opp.meter = 0;
+            clearWins();
+            prevState = STAGE2;
+            REG_DISPCTL |= !BG_ENABLE(2);
+            goToStage3();
+        }
     }
     if (player.health <= 0) {
-        goToLose();
+        oppWins++;
+        updateWins();
+        initGame();
+        if (oppWins >= 2) {
+            playerWins = 0;
+            oppWins = 0;
+            player.meter = 0;
+            opp.meter = 0;
+            clearWins();
+            goToLose();
+        }
     }
 }
 
 void goToStage3() {
+    opp.character = NUJA;
     DMANow(3, stage3TilesetPal, BG_PALETTE, stage3TilesetPalLen / 2);
     DMANow(3, stage3TilesetTiles, &CHARBLOCK[1], stage3TilesetTilesLen / 2);
+    DMANow(3, gameTilesPal, &BG_PALETTE[32], 16);
     DMANow(3, gameTilesTiles, &CHARBLOCK[0], gameTilesTilesLen / 2);
     DMANow(3, stage3Map, &SCREENBLOCK[20], stage3MapLen / 2);
 
+    for (int i = 0; i < uiMapLen; i++) {
+        SCREENBLOCK[28].tilemap[i] |= TILEMAP_ENTRY_PALROW(2);
+    }
 
     REG_DISPCTL = 0;
     REG_BG3CNT = BG_CHARBLOCK(1) | BG_SCREENBLOCK(20) | BG_SIZE_WIDE | SPRITE_ENABLE;
@@ -310,6 +408,7 @@ void goToStage3() {
         initGame();
     }
     state = STAGE3;
+    changeCharacters();
 }
 
 void stage3() {
@@ -318,6 +417,7 @@ void stage3() {
     updatePlayer();
     updateOpp();
     updateCamera();
+    updateSupers();
     calculateAttackHitboxes();
     drawPlayer();
     drawOpp();
@@ -329,10 +429,31 @@ void stage3() {
         goToPause();
     }
     if (opp.health <= 0) {
-        goToWin();
+        playerWins++;
+        updateWins();
+        initGame();
+        if (playerWins >= 2) {
+            playerWins = 0;
+            oppWins = 0;
+            player.meter = 0;
+            opp.meter = 0;
+            clearWins();
+            prevState = STAGE3;
+            goToWin();
+        }
     }
     if (player.health <= 0) {
-        goToLose();
+        oppWins++;
+        updateWins();
+        initGame();
+        if (oppWins >= 2) {
+            playerWins = 0;
+            oppWins = 0;
+            player.meter = 0;
+            opp.meter = 0;
+            clearWins();
+            goToLose();
+        }
     }
 }
 
@@ -340,6 +461,10 @@ void goToPause() {
     REG_DISPCTL |= BG_ENABLE(1);
     REG_BG1CNT = BG_CHARBLOCK(0) | BG_SCREENBLOCK(24);
     state = PAUSE;
+
+    for (int i = 0; i < pauseMapLen; i++) {
+        SCREENBLOCK[24].tilemap[i] |= TILEMAP_ENTRY_PALROW(2);
+    }
 }
 
 void pause() {
@@ -408,14 +533,7 @@ void switchMode0() {
     //Sets screens and tiles for mode 0 states
     REG_DISPCTL = 0;
     REG_DISPCTL = MODE(0);
-    DMANow(3, gameTilesPal, BG_PALETTE, gameTilesPalLen / 2);
-    DMANow(3, gameTilesTiles, &CHARBLOCK[0], gameTilesTilesLen / 2);
-    DMANow(3, cssMap, &SCREENBLOCK[30], cssMapLen / 2);
-    DMANow(3, stage1Map, &SCREENBLOCK[27], stage1MapLen / 2);
-    DMANow(3, stage3Map, &SCREENBLOCK[20], stage3MapLen / 2);
     DMANow(3, pauseMap, &SCREENBLOCK[24], pauseMapLen / 2);
-    DMANow(3, spritesheetTiles, &CHARBLOCK[4], spritesheetTilesLen / 2);
-    DMANow(3, spritesheetPal, SPRITE_PAL, spritesheetPalLen / 2);
     hideSprites();
     waitForVBlank();
     DMANow(3, shadowOAM, OAM, 512);

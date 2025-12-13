@@ -1,0 +1,57 @@
+{
+    "activeFile": "assets/ui.tmx",
+    "expandedProjectPaths": [
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "assets/gameTiles.tsx": {
+            "scaleInDock": 3.2736
+        },
+        "assets/stage2BackgroundBG.tsx": {
+            "scaleInDock": 1.5206
+        },
+        "assets/stage2FullBackground.tmx": {
+            "scale": 1.7222,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 255.7774939031471,
+                "y": 124.25966786668212
+            }
+        },
+        "assets/stage2Train.tsx": {
+            "scaleInDock": 1
+        },
+        "assets/stage3.tmx": {
+            "scale": 1.51962890625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 256.31257631257637,
+                "y": 128.32080200501252
+            }
+        },
+        "assets/stage3Tiles.tsx": {
+            "scaleInDock": 1.8648
+        },
+        "assets/ui.tmx": {
+            "scale": 3.0478,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 124.18793884113134,
+                "y": 107.29050462628783
+            }
+        }
+    },
+    "last.exportedFilePath": "/Users/noahsung/CS 2261/Punch+Kick",
+    "map.lastUsedExportFilter": "All Files (*)",
+    "openFiles": [
+        "assets/stage2FullBackground.tmx",
+        "assets/stage3.tmx",
+        "assets/ui.tmx"
+    ],
+    "project": "untitled.tiled-project",
+    "recentFiles": [
+        "assets/stage2FullBackground.tmx",
+        "assets/stage3.tmx",
+        "assets/ui.tmx"
+    ]
+}

@@ -14,6 +14,7 @@ typedef struct {
 
     int x;
     int y;
+    int top;
     int height;
     int width;
 } ATTACK;
@@ -42,6 +43,9 @@ extern enum type TYPE;
 enum character {
     DUMMY,
     CHANGMO,
+    NEON,
+    GINGER,
+    NUJA,
 };
 extern enum character CHARACTER;
 
@@ -67,8 +71,10 @@ extern ATTACK changmoCrKick;
 extern ATTACK changmoHigh;
 extern ATTACK changmoSp;
 extern ATTACK changmoSuper;
+extern ATTACK changmoMovelist[20];
 
 extern ATTACK dummyPunch;
+extern ATTACK dummyMovelist[20];
 
 void initAttacks();
 

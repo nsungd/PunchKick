@@ -22,6 +22,7 @@ typedef struct {
     int bottom;
 
     int crouch;
+    int inAir;
     int block;
     int blocking;
     int blockTimer;
@@ -41,6 +42,10 @@ typedef struct {
     int character;
     int oamIndex;
 
+    int bodyColor;
+
+    ATTACK *movelist;
+
     ATTACK *currentAttack;
     ATTACK *incomingAttack;
 } PLAYER;
@@ -51,8 +56,18 @@ enum direction {
 };
 extern enum direction DIRECTION;
 
+enum oppState {
+    IDLE,
+    APPROACHING,
+    ATTACKING,
+    RETREATING,
+};
+extern enum oppState OPPSTATE;
+
 extern int stage;
 extern int hOff;
+extern int playerWins;
+extern int oppWins;
 
 extern PLAYER player;
 extern PLAYER opp;
@@ -65,10 +80,14 @@ void updateCamera();
 void drawPlayer();
 void drawOpp();
 void calculateAttackHitboxes();
-void spawnHitbox(ATTACK *attack, PLAYER *target);
+void spawnHitbox(ATTACK *attack, PLAYER *target, PLAYER *user);
 void checkPosition();
 void drawPortraits();
 void updateHealthbars();
+void updateWins();
+void clearWins();
+void changeCharacters();
+void updateSupers();
 
 inline unsigned char colorAt(int x, int y);
 

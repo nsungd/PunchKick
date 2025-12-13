@@ -20,19 +20,19 @@
 	.size	gameTilesPal, 512
 gameTilesPal:
 	.short	1056
-	.short	639
-	.short	27104
+	.short	927
+	.short	25888
 	.short	9547
 	.short	32767
 	.short	31
 	.short	12223
 	.short	32138
-	.short	336
+	.short	32593
 	.short	12601
 	.short	16135
+	.short	703
 	.short	0
-	.short	0
-	.short	0
+	.short	760
 	.short	0
 	.short	0
 	.short	4
@@ -310,7 +310,7 @@ gameTilesTiles:
 	.short	0
 	.short	0
 	.short	0
-	.short	0
+	.short	4096
 	.short	0
 	.short	1632
 	.short	102
@@ -2344,34 +2344,34 @@ gameTilesTiles:
 	.short	0
 	.short	0
 	.short	0
+	.short	8192
+	.short	2
+	.short	512
+	.short	32
+	.short	32
+	.short	512
+	.short	32
+	.short	512
+	.short	512
+	.short	32
+	.short	8192
+	.short	2
 	.short	0
 	.short	0
 	.short	0
 	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
+	.short	8192
+	.short	2
+	.short	512
+	.short	32
+	.short	2848
+	.short	688
+	.short	2848
+	.short	688
+	.short	-19968
+	.short	43
+	.short	8192
+	.short	2
 	.short	0
 	.short	0
 	.short	0
@@ -3350,21 +3350,21 @@ gameTilesTiles:
 	.short	0
 	.short	0
 	.short	0
+	.short	-30584
 	.short	0
+	.short	-30584
 	.short	0
+	.short	-30584
 	.short	0
+	.short	-30584
 	.short	0
+	.short	-30584
 	.short	0
+	.short	-30584
 	.short	0
+	.short	-30584
 	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
+	.short	-30584
 	.short	0
 	.short	0
 	.short	0
@@ -3862,21 +3862,21 @@ gameTilesTiles:
 	.short	0
 	.short	0
 	.short	0
+	.short	136
 	.short	0
+	.short	136
 	.short	0
+	.short	136
 	.short	0
+	.short	136
 	.short	0
+	.short	136
 	.short	0
+	.short	136
 	.short	0
+	.short	136
 	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
+	.short	136
 	.short	0
 	.short	0
 	.short	0
@@ -4489,63 +4489,63 @@ gameTilesTiles:
 	.short	0
 	.short	0
 	.short	0
-	.short	1024
-	.short	0
-	.short	1024
-	.short	0
-	.short	17408
-	.short	0
-	.short	0
-	.short	0
-	.short	1024
 	.short	0
 	.short	0
 	.short	0
 	.short	0
 	.short	0
 	.short	0
-	.short	16388
-	.short	1024
-	.short	16384
-	.short	1024
-	.short	16388
-	.short	1024
-	.short	16388
-	.short	1024
-	.short	16388
-	.short	1092
 	.short	0
 	.short	0
 	.short	0
 	.short	0
 	.short	0
 	.short	0
-	.short	17472
-	.short	16388
-	.short	64
-	.short	16452
-	.short	64
-	.short	16448
-	.short	64
-	.short	16388
-	.short	64
-	.short	16388
-	.short	64
-	.short	0
-	.short	64
 	.short	0
 	.short	0
 	.short	0
-	.short	1088
-	.short	17472
-	.short	1024
-	.short	64
 	.short	0
-	.short	64
 	.short	0
-	.short	64
-	.short	1092
-	.short	64
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
 	.short	0
 	.short	0
 	.short	0
@@ -4950,20 +4950,47 @@ gameTilesTiles:
 	.short	0
 	.short	0
 	.short	0
+	.short	-32768
+	.short	136
+	.short	-32768
 	.short	0
+	.short	-32768
+	.short	136
 	.short	0
+	.short	128
+	.short	-32768
+	.short	136
 	.short	0
 	.short	0
 	.short	0
 	.short	0
 	.short	0
 	.short	0
+	.short	2048
+	.short	128
+	.short	2048
+	.short	128
+	.short	2048
+	.short	128
+	.short	2048
+	.short	128
+	.short	-30720
+	.short	136
 	.short	0
 	.short	0
 	.short	0
 	.short	0
 	.short	0
 	.short	0
+	.short	-30720
+	.short	136
+	.short	2048
+	.short	2048
+	.short	2048
+	.short	2048
+	.short	-30720
+	.short	136
+	.short	2048
 	.short	0
 	.short	0
 	.short	0
@@ -4971,58 +4998,31 @@ gameTilesTiles:
 	.short	0
 	.short	0
 	.short	0
+	.short	-30720
+	.short	136
+	.short	2048
+	.short	128
+	.short	-30720
+	.short	136
+	.short	2048
 	.short	0
+	.short	-30720
+	.short	136
 	.short	0
 	.short	0
 	.short	0
 	.short	0
 	.short	0
 	.short	0
+	.short	-32768
+	.short	136
+	.short	-32768
 	.short	0
+	.short	-32768
 	.short	0
+	.short	-32768
 	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
+	.short	-32768
 	.short	0
 	.short	0
 	.short	0

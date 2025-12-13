@@ -125,14 +125,14 @@ uiMap:
 	.short	0
 	.short	0
 	.short	0
+	.short	129
+	.short	129
 	.short	0
 	.short	0
 	.short	0
 	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
+	.short	129
+	.short	129
 	.short	0
 	.short	0
 	.short	0
@@ -532,6 +532,7 @@ uiMap:
 	.short	163
 	.short	0
 	.short	236
+	.short	237
 	.short	237
 	.short	237
 	.short	238
@@ -553,9 +554,8 @@ uiMap:
 	.short	0
 	.short	0
 	.short	0
-	.short	0
-	.short	0
 	.short	236
+	.short	237
 	.short	237
 	.short	237
 	.short	238
@@ -563,6 +563,7 @@ uiMap:
 	.short	163
 	.short	163
 	.short	267
+	.short	0
 	.short	0
 	.short	0
 	.short	0
@@ -584,9 +585,8 @@ uiMap:
 	.short	0
 	.short	0
 	.short	0
-	.short	0
-	.short	0
 	.short	267
+	.short	0
 	.short	0
 	.short	0
 	.short	0
@@ -596,6 +596,7 @@ uiMap:
 	.short	163
 	.short	0
 	.short	300
+	.short	301
 	.short	301
 	.short	301
 	.short	302
@@ -617,9 +618,8 @@ uiMap:
 	.short	0
 	.short	0
 	.short	0
-	.short	0
-	.short	0
 	.short	300
+	.short	301
 	.short	301
 	.short	301
 	.short	302

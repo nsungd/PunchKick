@@ -563,7 +563,7 @@ stage3Map:
 	.short	256
 	.short	256
 	.short	256
-	.short	160
+	.short	256
 	.short	256
 	.short	256
 	.short	256

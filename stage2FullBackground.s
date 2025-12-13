@@ -18,16 +18,6 @@
 	.type	stage2FullBackgroundMap, %object
 	.size	stage2FullBackgroundMap, 4096
 stage2FullBackgroundMap:
-	.short	0
-	.short	0
-	.short	0
-	.short	1
-	.short	2
-	.short	3
-	.short	4
-	.short	5
-	.short	6
-	.short	7
 	.short	8
 	.short	9
 	.short	10
@@ -44,14 +34,182 @@ stage2FullBackgroundMap:
 	.short	21
 	.short	22
 	.short	23
+	.short	24
+	.short	25
 	.short	26
 	.short	27
 	.short	28
 	.short	29
 	.short	30
 	.short	31
-	.short	0
-	.short	32
+	.short	30
+	.short	31
+	.short	26
+	.short	15
+	.short	16
+	.short	17
+	.short	18
+	.short	6
+	.short	8
+	.short	9
+	.short	10
+	.short	11
+	.short	12
+	.short	13
+	.short	14
+	.short	15
+	.short	16
+	.short	17
+	.short	18
+	.short	19
+	.short	20
+	.short	21
+	.short	22
+	.short	23
+	.short	24
+	.short	25
+	.short	26
+	.short	27
+	.short	28
+	.short	29
+	.short	30
+	.short	31
+	.short	8
+	.short	8
+	.short	8
+	.short	9
+	.short	10
+	.short	11
+	.short	12
+	.short	13
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	9
+	.short	10
+	.short	11
+	.short	12
+	.short	13
+	.short	14
+	.short	15
+	.short	16
+	.short	17
+	.short	18
+	.short	19
+	.short	20
+	.short	21
+	.short	22
+	.short	23
+	.short	24
+	.short	25
+	.short	26
+	.short	27
+	.short	28
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	9
+	.short	10
+	.short	11
+	.short	12
+	.short	13
+	.short	14
+	.short	15
+	.short	16
+	.short	17
+	.short	18
+	.short	19
+	.short	20
+	.short	21
+	.short	22
+	.short	23
+	.short	24
+	.short	25
+	.short	26
+	.short	27
+	.short	28
+	.short	29
+	.short	30
+	.short	31
+	.short	8
+	.short	9
+	.short	10
+	.short	11
+	.short	12
+	.short	13
+	.short	14
+	.short	8
+	.short	9
+	.short	10
+	.short	11
+	.short	12
+	.short	13
+	.short	14
+	.short	15
+	.short	16
+	.short	17
+	.short	18
+	.short	19
+	.short	20
+	.short	21
+	.short	22
+	.short	23
+	.short	24
+	.short	25
+	.short	26
+	.short	27
+	.short	28
+	.short	29
+	.short	30
+	.short	31
+	.short	31
+	.short	31
+	.short	31
+	.short	31
+	.short	31
+	.short	31
+	.short	31
+	.short	31
+	.short	40
+	.short	40
+	.short	40
+	.short	40
+	.short	40
+	.short	40
+	.short	40
+	.short	40
+	.short	40
+	.short	40
+	.short	40
+	.short	40
+	.short	40
+	.short	40
+	.short	41
+	.short	42
+	.short	43
+	.short	44
+	.short	45
+	.short	46
+	.short	47
+	.short	48
+	.short	49
+	.short	50
+	.short	51
+	.short	52
+	.short	53
+	.short	54
+	.short	55
+	.short	56
+	.short	57
+	.short	58
 	.short	32
 	.short	33
 	.short	34
@@ -76,164 +234,6 @@ stage2FullBackgroundMap:
 	.short	53
 	.short	54
 	.short	55
-	.short	58
-	.short	59
-	.short	60
-	.short	61
-	.short	62
-	.short	63
-	.short	32
-	.short	64
-	.short	64
-	.short	2
-	.short	3
-	.short	4
-	.short	5
-	.short	6
-	.short	7
-	.short	8
-	.short	9
-	.short	20
-	.short	21
-	.short	22
-	.short	42
-	.short	43
-	.short	44
-	.short	45
-	.short	42
-	.short	43
-	.short	44
-	.short	42
-	.short	43
-	.short	44
-	.short	45
-	.short	24
-	.short	22
-	.short	23
-	.short	24
-	.short	22
-	.short	23
-	.short	24
-	.short	64
-	.short	32
-	.short	33
-	.short	34
-	.short	35
-	.short	36
-	.short	37
-	.short	38
-	.short	39
-	.short	40
-	.short	41
-	.short	52
-	.short	53
-	.short	54
-	.short	74
-	.short	75
-	.short	76
-	.short	77
-	.short	74
-	.short	75
-	.short	76
-	.short	74
-	.short	75
-	.short	76
-	.short	77
-	.short	56
-	.short	54
-	.short	55
-	.short	56
-	.short	54
-	.short	55
-	.short	56
-	.short	96
-	.short	64
-	.short	65
-	.short	66
-	.short	67
-	.short	68
-	.short	68
-	.short	101
-	.short	102
-	.short	72
-	.short	73
-	.short	84
-	.short	42
-	.short	43
-	.short	44
-	.short	42
-	.short	43
-	.short	44
-	.short	45
-	.short	24
-	.short	24
-	.short	42
-	.short	43
-	.short	44
-	.short	45
-	.short	88
-	.short	86
-	.short	87
-	.short	88
-	.short	86
-	.short	87
-	.short	88
-	.short	0
-	.short	1
-	.short	2
-	.short	3
-	.short	4
-	.short	5
-	.short	6
-	.short	67
-	.short	101
-	.short	102
-	.short	43
-	.short	44
-	.short	74
-	.short	75
-	.short	76
-	.short	74
-	.short	75
-	.short	76
-	.short	77
-	.short	56
-	.short	56
-	.short	74
-	.short	75
-	.short	76
-	.short	77
-	.short	25
-	.short	26
-	.short	27
-	.short	28
-	.short	29
-	.short	30
-	.short	31
-	.short	32
-	.short	33
-	.short	34
-	.short	35
-	.short	36
-	.short	37
-	.short	38
-	.short	39
-	.short	40
-	.short	74
-	.short	75
-	.short	76
-	.short	74
-	.short	75
-	.short	76
-	.short	77
-	.short	22
-	.short	23
-	.short	24
-	.short	88
-	.short	88
-	.short	88
-	.short	88
-	.short	55
 	.short	56
 	.short	57
 	.short	58
@@ -255,12 +255,12 @@ stage2FullBackgroundMap:
 	.short	74
 	.short	75
 	.short	76
-	.short	52
-	.short	52
-	.short	53
-	.short	54
-	.short	55
-	.short	56
+	.short	77
+	.short	78
+	.short	79
+	.short	80
+	.short	81
+	.short	82
 	.short	83
 	.short	84
 	.short	85
@@ -287,12 +287,12 @@ stage2FullBackgroundMap:
 	.short	106
 	.short	107
 	.short	108
-	.short	84
-	.short	84
-	.short	85
-	.short	86
-	.short	87
-	.short	88
+	.short	109
+	.short	110
+	.short	111
+	.short	112
+	.short	113
+	.short	114
 	.short	115
 	.short	116
 	.short	117
@@ -401,7 +401,7 @@ stage2FullBackgroundMap:
 	.short	220
 	.short	221
 	.short	222
-	.short	42
+	.short	223
 	.short	224
 	.short	225
 	.short	226
@@ -433,7 +433,7 @@ stage2FullBackgroundMap:
 	.short	252
 	.short	253
 	.short	254
-	.short	74
+	.short	255
 	.short	256
 	.short	257
 	.short	258
@@ -1074,6 +1074,145 @@ stage2FullBackgroundMap:
 	.short	27
 	.short	28
 	.short	29
+	.short	14
+	.short	15
+	.short	16
+	.short	8
+	.short	8
+	.short	9
+	.short	10
+	.short	11
+	.short	8
+	.short	9
+	.short	10
+	.short	11
+	.short	12
+	.short	13
+	.short	14
+	.short	15
+	.short	16
+	.short	17
+	.short	18
+	.short	19
+	.short	20
+	.short	21
+	.short	22
+	.short	23
+	.short	24
+	.short	25
+	.short	26
+	.short	27
+	.short	28
+	.short	29
+	.short	30
+	.short	31
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	9
+	.short	10
+	.short	11
+	.short	12
+	.short	8
+	.short	9
+	.short	10
+	.short	11
+	.short	12
+	.short	13
+	.short	14
+	.short	15
+	.short	16
+	.short	17
+	.short	18
+	.short	19
+	.short	20
+	.short	21
+	.short	22
+	.short	23
+	.short	24
+	.short	25
+	.short	26
+	.short	27
+	.short	28
+	.short	29
+	.short	30
+	.short	31
+	.short	15
+	.short	16
+	.short	17
+	.short	18
+	.short	19
+	.short	20
+	.short	21
+	.short	22
+	.short	8
+	.short	9
+	.short	10
+	.short	11
+	.short	12
+	.short	13
+	.short	14
+	.short	15
+	.short	16
+	.short	17
+	.short	18
+	.short	19
+	.short	20
+	.short	21
+	.short	22
+	.short	23
+	.short	24
+	.short	25
+	.short	26
+	.short	27
+	.short	28
+	.short	29
+	.short	30
+	.short	31
+	.short	31
+	.short	31
+	.short	31
+	.short	31
+	.short	31
+	.short	31
+	.short	31
+	.short	31
+	.short	31
+	.short	31
+	.short	31
+	.short	31
+	.short	31
+	.short	31
+	.short	31
+	.short	31
+	.short	20
+	.short	21
+	.short	22
+	.short	23
+	.short	24
+	.short	25
+	.short	26
+	.short	27
+	.short	28
+	.short	29
+	.short	30
+	.short	31
+	.short	31
+	.short	31
+	.short	31
+	.short	31
+	.short	59
+	.short	60
+	.short	61
+	.short	40
+	.short	40
+	.short	40
+	.short	40
+	.short	40
+	.short	40
+	.short	40
+	.short	41
 	.short	42
 	.short	43
 	.short	44
@@ -1095,155 +1234,28 @@ stage2FullBackgroundMap:
 	.short	60
 	.short	61
 	.short	62
-	.short	55
-	.short	56
-	.short	57
-	.short	58
-	.short	55
-	.short	56
-	.short	57
-	.short	58
-	.short	59
-	.short	60
-	.short	61
-	.short	23
-	.short	20
-	.short	21
-	.short	22
-	.short	23
-	.short	24
-	.short	21
-	.short	22
-	.short	23
-	.short	24
-	.short	21
-	.short	22
-	.short	23
-	.short	24
-	.short	25
-	.short	26
-	.short	27
-	.short	28
-	.short	29
-	.short	30
-	.short	31
-	.short	23
-	.short	24
-	.short	25
-	.short	26
-	.short	27
-	.short	28
-	.short	29
-	.short	29
-	.short	74
-	.short	75
-	.short	76
-	.short	55
-	.short	52
-	.short	53
-	.short	54
-	.short	55
-	.short	56
-	.short	53
-	.short	54
-	.short	55
-	.short	56
-	.short	53
-	.short	54
-	.short	55
-	.short	56
-	.short	57
-	.short	58
-	.short	59
-	.short	60
-	.short	61
-	.short	62
-	.short	23
-	.short	24
-	.short	25
-	.short	26
-	.short	27
-	.short	28
-	.short	29
-	.short	29
-	.short	61
-	.short	106
-	.short	107
-	.short	108
-	.short	87
-	.short	84
-	.short	85
-	.short	86
-	.short	87
-	.short	88
-	.short	21
-	.short	22
-	.short	23
-	.short	24
-	.short	85
-	.short	86
-	.short	87
-	.short	88
-	.short	89
-	.short	90
-	.short	91
-	.short	92
-	.short	93
-	.short	94
-	.short	23
-	.short	24
-	.short	25
-	.short	74
-	.short	75
-	.short	76
-	.short	23
-	.short	23
-	.short	24
-	.short	138
-	.short	139
-	.short	140
-	.short	77
-	.short	52
+	.short	32
+	.short	33
+	.short	34
+	.short	35
+	.short	36
+	.short	37
+	.short	38
+	.short	39
+	.short	40
+	.short	41
 	.short	42
 	.short	43
 	.short	44
 	.short	45
+	.short	46
+	.short	47
+	.short	48
+	.short	49
+	.short	50
+	.short	51
+	.short	52
 	.short	53
-	.short	54
-	.short	55
-	.short	56
-	.short	22
-	.short	23
-	.short	24
-	.short	25
-	.short	26
-	.short	27
-	.short	28
-	.short	29
-	.short	30
-	.short	74
-	.short	75
-	.short	76
-	.short	23
-	.short	106
-	.short	107
-	.short	108
-	.short	55
-	.short	55
-	.short	56
-	.short	57
-	.short	58
-	.short	59
-	.short	44
-	.short	84
-	.short	74
-	.short	75
-	.short	76
-	.short	77
-	.short	85
-	.short	86
-	.short	87
-	.short	88
 	.short	54
 	.short	55
 	.short	56
@@ -1253,19 +1265,19 @@ stage2FullBackgroundMap:
 	.short	60
 	.short	61
 	.short	62
-	.short	106
-	.short	107
-	.short	108
-	.short	55
-	.short	138
-	.short	139
-	.short	140
-	.short	87
-	.short	87
-	.short	88
-	.short	89
-	.short	90
-	.short	91
+	.short	63
+	.short	64
+	.short	65
+	.short	66
+	.short	67
+	.short	68
+	.short	69
+	.short	70
+	.short	71
+	.short	72
+	.short	73
+	.short	74
+	.short	75
 	.short	76
 	.short	77
 	.short	78
@@ -1285,19 +1297,19 @@ stage2FullBackgroundMap:
 	.short	92
 	.short	93
 	.short	94
-	.short	138
-	.short	139
-	.short	140
-	.short	87
-	.short	88
-	.short	89
-	.short	90
-	.short	91
-	.short	92
-	.short	93
-	.short	74
-	.short	75
-	.short	76
+	.short	95
+	.short	96
+	.short	97
+	.short	98
+	.short	99
+	.short	100
+	.short	101
+	.short	102
+	.short	103
+	.short	104
+	.short	105
+	.short	106
+	.short	107
 	.short	108
 	.short	109
 	.short	110
@@ -1305,7 +1317,7 @@ stage2FullBackgroundMap:
 	.short	112
 	.short	113
 	.short	114
-	.short	45
+	.short	115
 	.short	116
 	.short	117
 	.short	118
@@ -1318,26 +1330,26 @@ stage2FullBackgroundMap:
 	.short	125
 	.short	126
 	.short	127
-	.short	108
-	.short	109
-	.short	110
+	.short	128
+	.short	129
+	.short	130
+	.short	131
+	.short	132
+	.short	133
+	.short	134
+	.short	135
+	.short	136
+	.short	137
+	.short	138
+	.short	139
 	.short	140
 	.short	141
-	.short	142
-	.short	143
-	.short	103
-	.short	104
-	.short	106
-	.short	107
-	.short	108
-	.short	140
-	.short	42
 	.short	142
 	.short	143
 	.short	144
 	.short	145
 	.short	146
-	.short	77
+	.short	147
 	.short	148
 	.short	149
 	.short	150
@@ -1350,22 +1362,22 @@ stage2FullBackgroundMap:
 	.short	157
 	.short	158
 	.short	159
-	.short	140
-	.short	141
-	.short	142
+	.short	160
+	.short	161
+	.short	162
+	.short	163
+	.short	164
+	.short	165
+	.short	166
+	.short	167
+	.short	168
+	.short	169
+	.short	170
+	.short	171
 	.short	172
 	.short	173
 	.short	174
 	.short	175
-	.short	135
-	.short	136
-	.short	138
-	.short	139
-	.short	140
-	.short	172
-	.short	74
-	.short	173
-	.short	174
 	.short	176
 	.short	177
 	.short	178
@@ -1381,23 +1393,23 @@ stage2FullBackgroundMap:
 	.short	188
 	.short	189
 	.short	190
-	.short	74
-	.short	172
-	.short	173
-	.short	174
-	.short	175
-	.short	164
-	.short	165
-	.short	166
-	.short	167
-	.short	168
-	.short	170
-	.short	171
-	.short	172
-	.short	43
+	.short	191
+	.short	192
+	.short	193
+	.short	194
+	.short	195
+	.short	196
+	.short	197
+	.short	198
+	.short	199
+	.short	200
+	.short	201
+	.short	202
+	.short	203
 	.short	204
 	.short	205
 	.short	206
+	.short	207
 	.short	208
 	.short	209
 	.short	210
@@ -1413,22 +1425,22 @@ stage2FullBackgroundMap:
 	.short	220
 	.short	221
 	.short	222
-	.short	106
-	.short	107
-	.short	193
-	.short	194
-	.short	195
-	.short	196
-	.short	197
-	.short	198
-	.short	199
-	.short	200
-	.short	202
-	.short	203
-	.short	204
-	.short	75
+	.short	223
+	.short	224
+	.short	225
+	.short	226
+	.short	227
+	.short	228
+	.short	229
+	.short	230
+	.short	231
+	.short	232
+	.short	233
+	.short	234
+	.short	235
 	.short	236
 	.short	237
+	.short	238
 	.short	239
 	.short	240
 	.short	241
@@ -1445,19 +1457,19 @@ stage2FullBackgroundMap:
 	.short	252
 	.short	253
 	.short	254
-	.short	318
-	.short	319
-	.short	225
-	.short	226
-	.short	227
-	.short	228
-	.short	229
-	.short	230
-	.short	231
-	.short	232
-	.short	234
-	.short	235
-	.short	236
+	.short	255
+	.short	256
+	.short	257
+	.short	258
+	.short	259
+	.short	260
+	.short	261
+	.short	262
+	.short	263
+	.short	264
+	.short	265
+	.short	266
+	.short	267
 	.short	268
 	.short	269
 	.short	270
@@ -1476,22 +1488,22 @@ stage2FullBackgroundMap:
 	.short	283
 	.short	284
 	.short	285
-	.short	318
-	.short	350
-	.short	351
-	.short	319
-	.short	258
-	.short	259
-	.short	260
-	.short	261
-	.short	262
-	.short	263
-	.short	264
-	.short	266
-	.short	267
-	.short	268
-	.short	318
-	.short	318
+	.short	286
+	.short	287
+	.short	288
+	.short	289
+	.short	290
+	.short	291
+	.short	292
+	.short	293
+	.short	294
+	.short	295
+	.short	296
+	.short	297
+	.short	298
+	.short	299
+	.short	300
+	.short	301
 	.short	302
 	.short	303
 	.short	304
@@ -1508,22 +1520,22 @@ stage2FullBackgroundMap:
 	.short	315
 	.short	316
 	.short	317
-	.short	350
-	.short	351
-	.short	350
-	.short	351
-	.short	290
-	.short	291
-	.short	292
-	.short	293
-	.short	294
-	.short	295
-	.short	296
-	.short	298
-	.short	299
-	.short	300
-	.short	350
-	.short	351
+	.short	318
+	.short	319
+	.short	320
+	.short	321
+	.short	322
+	.short	323
+	.short	324
+	.short	325
+	.short	326
+	.short	327
+	.short	328
+	.short	329
+	.short	330
+	.short	331
+	.short	332
+	.short	333
 	.short	334
 	.short	335
 	.short	336
@@ -1542,20 +1554,20 @@ stage2FullBackgroundMap:
 	.short	349
 	.short	350
 	.short	351
-	.short	320
-	.short	321
-	.short	322
-	.short	323
-	.short	324
-	.short	325
-	.short	326
-	.short	327
-	.short	328
-	.short	330
-	.short	331
-	.short	332
-	.short	382
-	.short	383
+	.short	352
+	.short	353
+	.short	354
+	.short	355
+	.short	356
+	.short	357
+	.short	358
+	.short	359
+	.short	360
+	.short	361
+	.short	362
+	.short	363
+	.short	364
+	.short	365
 	.short	366
 	.short	367
 	.short	368
@@ -1574,18 +1586,18 @@ stage2FullBackgroundMap:
 	.short	381
 	.short	382
 	.short	383
-	.short	352
-	.short	353
-	.short	354
-	.short	355
-	.short	356
-	.short	357
-	.short	358
-	.short	359
-	.short	360
-	.short	362
-	.short	363
-	.short	364
+	.short	384
+	.short	385
+	.short	386
+	.short	387
+	.short	388
+	.short	389
+	.short	390
+	.short	391
+	.short	392
+	.short	393
+	.short	394
+	.short	395
 	.short	396
 	.short	397
 	.short	398
@@ -1606,18 +1618,18 @@ stage2FullBackgroundMap:
 	.short	413
 	.short	414
 	.short	415
-	.short	384
-	.short	385
-	.short	386
-	.short	387
-	.short	388
-	.short	389
-	.short	390
-	.short	391
-	.short	392
-	.short	394
-	.short	395
-	.short	396
+	.short	416
+	.short	417
+	.short	418
+	.short	419
+	.short	420
+	.short	421
+	.short	422
+	.short	423
+	.short	424
+	.short	425
+	.short	426
+	.short	427
 	.short	428
 	.short	429
 	.short	430
@@ -1638,18 +1650,18 @@ stage2FullBackgroundMap:
 	.short	445
 	.short	446
 	.short	447
-	.short	416
-	.short	417
-	.short	418
-	.short	419
-	.short	420
-	.short	421
-	.short	422
-	.short	423
-	.short	424
-	.short	426
-	.short	427
-	.short	428
+	.short	448
+	.short	449
+	.short	450
+	.short	451
+	.short	452
+	.short	453
+	.short	454
+	.short	455
+	.short	456
+	.short	457
+	.short	458
+	.short	459
 	.short	460
 	.short	461
 	.short	462
@@ -1670,18 +1682,18 @@ stage2FullBackgroundMap:
 	.short	477
 	.short	478
 	.short	479
-	.short	448
-	.short	449
-	.short	450
-	.short	451
-	.short	452
-	.short	453
-	.short	454
-	.short	455
-	.short	456
-	.short	458
-	.short	459
-	.short	460
+	.short	480
+	.short	481
+	.short	482
+	.short	483
+	.short	484
+	.short	485
+	.short	486
+	.short	487
+	.short	488
+	.short	489
+	.short	490
+	.short	491
 	.short	492
 	.short	493
 	.short	494
@@ -1702,18 +1714,6 @@ stage2FullBackgroundMap:
 	.short	509
 	.short	510
 	.short	511
-	.short	480
-	.short	481
-	.short	482
-	.short	483
-	.short	484
-	.short	485
-	.short	486
-	.short	487
-	.short	488
-	.short	490
-	.short	491
-	.short	492
 	.short	163
 	.short	163
 	.short	163
@@ -1931,7 +1931,7 @@ stage2FullBackgroundMap:
 	.short	163
 	.short	163
 	.short	163
-	.short	163
+	.short	0
 	.short	163
 	.short	163
 	.short	163
